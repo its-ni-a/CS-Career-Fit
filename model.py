@@ -6,19 +6,19 @@ def calculate_score(form_data):
     return score
         
 def score_category(score):
-    if score <= 130:
+    if score <= 200:
         return "creative_design.html"
 
-    elif score <= 260:
-        return "creative_design.html"
+    elif score <= 300:
+        return "business_technology.html"
 
-    elif score <= 390:
-        return "creative_design.html"
+    elif score <= 400:
+        return "advanced_technology.html"
 
-    elif score <= 520:
-        return "cyber.html"
+    elif score <= 500:
+        return "cybersecurity_it.html"
 
-    elif score <= 650:
-        return "outside_careers.html"
+    elif score <= 600:
+        return "tech_related.html"
     
     

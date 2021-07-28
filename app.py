@@ -56,10 +56,12 @@ def resources():
     }
     return render_template('resources.html', data=data)
 
+
+
 @app.route('/creative_design', methods=['GET', 'POST'])
 def creative_design():
     if request.method == "GET":
-        return render_template('.html')
+        return render_template('creative_design.html')
     else:
         form=request.form
         print (form)
@@ -71,12 +73,16 @@ def creative_design():
         data = {
             'category': category
         }
-        return render_template(template, data=data)
+    data = {
+        
+    }
+    return render_template(template, data=data)
+   
 
 @app.route('/advanced_technology', methods=['GET', 'POST'])
 def advanced_technology():
     if request.method == "GET":
-        return render_template('.html')
+        return render_template('advanced_technology.html')
     else:
         form=request.form
         print (form)
@@ -88,29 +94,17 @@ def advanced_technology():
         data = {
             'category': category
         }
-        return render_template(template, data=data)
+    data = {
+        
+    }
+    return render_template(template, data=data)
 
-@app.route('/financial_technology', methods=['GET', 'POST'])
-def financial_technology():
-    if request.method == "GET":
-        return render_template('.html')
-    else:
-        form=request.form
-        print (form)
-        score = model.calculate_score(form)
-        template = model.score_category(score)
-        print (score)
-        category= model.score_category(score)
-        print(category)    
-        data = {
-            'category': category
-        }
-        return render_template(template, data=data)
 
-@app.route('/business_technology', methods=['GET', 'POST'])
-def business_technology():
+
+@app.route('/business_fin_technology', methods=['GET', 'POST'])
+def business_fin_technology():
     if request.method == "GET":
-        return render_template('.html')
+        return render_template('business_fin_technology.html')
     else:
         form=request.form
         print (form)
@@ -122,12 +116,15 @@ def business_technology():
         data = {
             'category': category
         }
-        return render_template(template, data=data)
+    data = {
+        
+    }
+    return render_template(template, data=data)
 
 @app.route('/cybersecurity_it', methods=['GET', 'POST'])
 def cybersecurity_it():
     if request.method == "GET":
-        return render_template('.html')
+        return render_template('cybersecurity.html')
     else:
         form=request.form
         print (form)
@@ -139,12 +136,15 @@ def cybersecurity_it():
         data = {
             'category': category
         }
-        return render_template(template, data=data)
+    data = {
+        
+    }
+    return render_template(template, data=data)
 
 @app.route('/tech_related', methods=['GET', 'POST'])
 def tech_related():
     if request.method == "GET":
-        return render_template('.html')
+        return render_template('tech_related.html')
     else:
         form=request.form
         print (form)
@@ -156,4 +156,7 @@ def tech_related():
         data = {
             'category': category
         }
-        return render_template(template, data=data)
+    data = {
+        
+    }
+    return render_template(template, data=data)
