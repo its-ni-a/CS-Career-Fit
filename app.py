@@ -124,7 +124,7 @@ def business_fin_technology():
 @app.route('/cybersecurity_it', methods=['GET', 'POST'])
 def cybersecurity_it():
     if request.method == "GET":
-        return render_template('cybersecurity.html')
+        return render_template('cybersecurity_it.html')
     else:
         form=request.form
         print (form)
@@ -160,3 +160,10 @@ def tech_related():
         
     }
     return render_template(template, data=data)
+
+@app.route('/contact_us')
+def contact_us():
+    data = {
+        
+    }
+    return render_template('contact_us.html', data=data)
