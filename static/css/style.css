@@ -2,6 +2,8 @@
 .navbar-dark{
     background: linear-gradient( #000, #000)
 }
+.navbar-nav{
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -126,13 +128,13 @@
     background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("https://images.alphacoders.com/104/thumb-1920-1046781.jpg") 0 0 no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 700px;
 }
 .background_motion:before{
     content:'';
     position: absolute;
     width: 100%;
-    height: 900px;
+    height: 700px;
     background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("https://images.alphacoders.com/104/thumb-1920-1046781.jpg") 0 0 no-repeat;
     background-size: cover;
 }
@@ -182,7 +184,7 @@
 
 .blank_space{
     width:100%;
-    height: 750px; 
+    height: 600px; 
     background-color: black;
 }
 
@@ -235,7 +237,18 @@ section{
 h1{
     font-weight: 600;    
 }
-
+#Text3_p{
+    text-align: center;
+}
+.languages-col{
+    flex-basis: 23.5%;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 8%;
+}
+#java_margin{
+    margin-left: 40px;
+}
 .card-text{
     color: black;
     font-size: 15px;
@@ -255,40 +268,42 @@ h1{
  }
 .btn{
     background-color: rgb(6, 62, 88);
-    margin-left: 60px
+    margin-left: 30%;
  }
-/*DESCRIPTIONS*/
-.col-3{
-    font-size: 30px;
-    color: #fff;
-    height: 250px;;
+.homepage_pic4{
+    background: linear-gradient(45deg, rgba(13, 157, 224)70%, rgba(0, 0, 0, 0.5))30%,url("https://i.pinimg.com/originals/a0/73/2f/a0732f8b3693f76363d6e5307ec43996.jpg") 0 0 no-repeat;
+    height: 600px;
+    background-size: cover;
     text-align: center;
 }
-.col-9{
-    font-size: 30px;
+#Text4_h1{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#Text4_p{
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+#Text4_p_quiz{
+    font-weight: bold;
+    margin-left: 100px;
+}
+#btn_quiz{
+    background:rgb(6, 62, 88);
+    width: 200px;
+    border: none;
+    outline: none;
     color: #fff;
-    height: 300px;
+    font-weight: bold;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgb(6, 62, 88,0.3);
+    margin-left: 0%;
+    
 }
-.hardware_img{
-    background: linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3)),url("https://media.istockphoto.com/photos/futuristic-circuit-board-blue-with-electrons-picture-id483147081?k=6&m=483147081&s=612x612&w=0&h=qUkUJKX1QvMbWv1Y2xQzgC6we1YiSLomxR1_h-25Fdk=") 0 0 no-repeat;   
-    height: 300px;
-}
-.software_img{
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1054955998?k=6&m=1054955998&s=612x612&w=0&h=shvE4Ka3admbK_9ZapZ7b0uSGfuRX3-K4v9KVv45WIA=") 0 0 no-repeat;   
-    height: 300px;
-}
-.design_img{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("https://media.istockphoto.com/photos/futuristic-digital-technology-screen-on-the-eye-picture-id1166272744?k=6&m=1166272744&s=612x612&w=0&h=_JDEWm7nc53mX6sbCsPTks10LzlMIoiKF-dNpaKVIwk=") 0 0 no-repeat;   
-    height: 300px;
-}
-.cybersecurity_img{
-    background: linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3)),url("https://media.istockphoto.com/photos/access-denied-picture-id1057964240?k=6&m=1057964240&s=612x612&w=0&h=OotGyjpx7r-pXzfBjn5HtQgrd-SjQg-DRiPJKTwTf2s=") 0 0 no-repeat;   
-    height: 300px;
-}
-
 /*QUIZ_PAGE*/
 .quiz_header{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),url("https://media.istockphoto.com/photos/futuristic-circuit-board-blue-with-electrons-picture-id483147081?k=6&m=483147081&s=612x612&w=0&h=qUkUJKX1QvMbWv1Y2xQzgC6we1YiSLomxR1_h-25Fdk=") 0 0 no-repeat;   
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url("https://media.istockphoto.com/photos/futuristic-circuit-board-blue-with-electrons-picture-id483147081?k=6&m=483147081&s=612x612&w=0&h=qUkUJKX1QvMbWv1Y2xQzgC6we1YiSLomxR1_h-25Fdk=") 0 0 no-repeat;   
     background-size: cover;
     height: 400px;
     text-align: center;
@@ -315,6 +330,9 @@ h1{
     color: fff;
     margin-bottom: 100px;
     margin-top: 50px;
+    width: 200px;
+    font-weight: bold;
+    margin-left: 10%;
 }
 #submit:hover{
    color: rgb(6, 62, 88);
@@ -432,21 +450,142 @@ h1{
 }
 
 /*RESOURCES PAGE*/
-.resources_header{
-    background: url("https://i.pinimg.com/474x/aa/0c/26/aa0c2624b6119cbba78db70745fd02d4.jpg") 0 0 no-repeat;   
-    background-size: cover;
-    height: 300px;
-    text-align: center;
-    padding: 200px;
-}
-.resources_section{
-    background: rgb(4, 70, 100);   
-    width: 100%;
-    color: #fff;
 
+#resources{
+    background: rgba(139, 198, 226, 0.726);
 }
-.resources_title{
-    font-family: 'Nova Mono', monospace;
+#resources_h1{
+    color: #000;
+    margin-bottom: 10px;
     font-weight: bold;
+}
+#resources_p{
+    color: #000;
+    margin-bottom: 40px;
+}
+
+#resources-container{
+    width: 80%;
+    margin-bottom: 100px;
+}
+.resources-box{
+    display: flex;
+}
+.resources-left{
+    flex-basis: 60%;
+    padding: 40px 40px;
+}
+.resources-right{
+    flex-basis: 40%;
+    padding: 40px 40px;
+    color: rgba(139, 198, 226, 0.726);
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+#resources-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+
+/*CONTACT_US PAGE*/
+
+#contact_us{
+    background: rgba(65, 165, 211, 0.726);
+}
+#contact_us_h1{
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#contact_us_p{
+    color: #000;
+    margin-bottom: 40px;
+}
+#contact_us-container{
+    width: 80%;
+    margin-bottom: 100px;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 40px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px 40px;
+    background: rgb(6, 62, 88);
+    color: #fff;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+#contact_us-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+#contact_label{
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(6, 62, 88);
+}
+#contact_us-btn{
+    background:rgb(6, 62, 88);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgb(6, 62, 88,0.3);
+}
+#left_contact{
+    color: 6, 62, 88,0.3;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#right_contact{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+    color: #fff;
+}
+tr td{
+    padding-top: 20px;
     color: #fff;
 }

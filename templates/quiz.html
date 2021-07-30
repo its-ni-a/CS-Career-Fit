@@ -1,7 +1,7 @@
 {% extends 'base.html'%}
 
 {% block title%}
-
+Career Quiz
 {% endblock title%}
 
 
@@ -9,378 +9,459 @@
 {% block content%}
 
 <form method="POST" action="/creative_design">
-<div class="quiz_section">
+    <div class="quiz_section">
 
 
 
-    
-    <section>
-        <div class="quiz_header">
-        <h1 class="quiz_title">Computer Science Career Quiz</h1>
 
-        <h2 class="quiz_description">Take this quiz in order to find out what CS career is best fit for your personality!</h2>
-        </div>
-    </br>  
-    </section>
+        <section>
+            <div class="quiz_header">
+                <h1 class="quiz_title">Computer Science Career Quiz</h1>
+            </br>
+                <h2 class="quiz_description">Take this quiz in order to find out what CS career is best fit for your
+                    personality!</h2>
+            </div>
+            </br>
+        </section>
 
-    <!--Question 1-->
-    <div class="container">
-    <div class="row">
-        <div class="row">
-            <h3 class="quiz_question">1. Are you familiar with coding languages?</h3>
-            <div class="col-12">                <input class="form-check-input" type="radio" name="question1" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">Yes, I prefer front-end languages like
-                HTML/CSS</label>
+        <!--Question 1-->
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <h3 class="quiz_question">1. Are you familiar with coding languages?</h3>
+                    <div class="col-12"> <input class="form-check-input" type="radio" name="question1" id="inlineRadio1"
+                            value="creative_design">
+                        <label class="form-check-label" for="inlineRadio1">Yes, I prefer front-end languages like
+                            HTML/CSS</label>
 
-             </div>
-            <div class="col-12">
-                <input class="form-check-input" type="radio" name="question1" id="inlineRadio2" value="fintech_business">
-                <label class="form-check-label" for="inlineRadio2">Yes, I prefer languages like Python and
-                    JavaScript</label>
-             </div>
-            <div class="col-12">
-             <input class="form-check-input" type="radio" name="question1" id="inlineRadio3" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio3">Yes, I prefer lanuguages like Java and C++</label>
+                    </div>
+                    <div class="col-12">
+                        <input class="form-check-input" type="radio" name="question1" id="inlineRadio2"
+                            value="fintech_business">
+                        <label class="form-check-label" for="inlineRadio2">Yes, I prefer languages like Python and
+                            JavaScript</label>
+                    </div>
+                    <div class="col-12">
+                        <input class="form-check-input" type="radio" name="question1" id="inlineRadio3"
+                            value="advanced_technology">
+                        <label class="form-check-label" for="inlineRadio3">Yes, I prefer lanuguages like Java and
+                            C++</label>
+                    </div>
+
+                    <div class="col-12">
+                        <input class="form-check-input" type="radio" name="question1" id="inlineRadio3"
+                            value="cybersecurity_it">
+                        <label class="form-check-label" for="inlineRadio3">No, I don't but I am interested in learning
+                            more about
+                            them</label>
+                    </div>
+                    <div class="col-12">
+                        <input class="form-check-input" type="radio" name="question1" id="inlineRadio3"
+                            value="tech_related">
+                        <label class="form-check-label" for="inlineRadio3">No, I'm not interested in coding
+                            languages</label>
+                    </div>
+                    </br>
+                    </br>
                 </div>
 
-            <div class="col-12">
-            <input class="form-check-input" type="radio" name="question1" id="inlineRadio3" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio3">No, I don't but I am interested in learning more about
-                them</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question1" id="inlineRadio3" value="tech_related">
-            <label class="form-check-label" for="inlineRadio3">No, I'm not interested in coding languages</label>
-        </div>
-    </br>
-    </br>
-        </div>
 
-    
-        <!--Question 2-->
-        <h3 class="quiz_question">2. Did you go to college for computer science?</h3>
-        <div class="col-12">
+                <!--Question 2-->
+                <h3 class="quiz_question">2. Did you go to college for computer science?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question2" id="inlineRadio1" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio1">Yes, I majored in Computer Science</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question2" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">No, but I went for a computer-related major</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question2" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">No, but I went for a math/business-related major</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question2" id="inlineRadio2" value="creative_design">
-            <label class="form-check-label" for="inlineRadio2">No, I went for a non-computer related major</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question2" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">No, I did not go to college</label>
-        </div>
-        
-    </br>
-    </br>
-        <!--Question 3-->
-        <h3 class="quiz_question">3. Are you a very social person?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question2" id="inlineRadio1"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio1">Yes, I majored in Computer Science</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question2" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">No, but I went for a computer-related
+                        major</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question2" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">No, but I went for a math/business-related
+                        major</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question2" id="inlineRadio2"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio2">No, I went for a non-computer related
+                        major</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question2" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">No, I did not go to college</label>
+                </div>
 
-            <input class="form-check-input" type="radio" name="question3" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">Yes I am</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">Most of the time</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">At times</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Not really</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">Not at all</label>
-        </div>
-</br>
-</br>
-        <!--Question 4-->
-        <h3 class="quiz_question">4. Do you have an understanding of business and economics?</h3>
-        <div class="col-12">
+                </br>
+                </br>
+                <!--Question 3-->
+                <h3 class="quiz_question">3. Are you a very social person?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question4" id="inlineRadio1" value="tech_related">
-            <label class="form-check-label" for="inlineRadio1">None</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question4" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">Want to Learn</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question4" id="inlineRadio2" value="creative_design">
-            <label class="form-check-label" for="inlineRadio2">Beginner</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question4" id="inlineRadio3" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio3">Intermediate</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question4" id="inlineRadio3" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio3">Advanced</label>
-        </div>
-</br>
-</br>
-        <!--Question 5-->
-        <h3 class="quiz_question">5. What is you ideal workspace environment?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question3" id="inlineRadio1"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio1">Yes I am</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question3" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">Most of the time</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question3" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">At times</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question3" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Not really</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question3" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">Not at all</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 4-->
+                <h3 class="quiz_question">4. Do you have an understanding of business and economics?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question5" id="inlineRadio1" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio1">Independent</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question5" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">Small Groups</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question5" id="inlineRadio2" value="creative_design">
-            <label class="form-check-label" for="inlineRadio2">Collaborative Teams</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question5" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Leading a Project</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question5" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">Any of the above</label>
-        </div>
-</br>
-</br>
-        <!--Question 6-->
-        <h3 class="quiz_question">6. Which of these would you enjoy working for?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question4" id="inlineRadio1"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio1">None</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question4" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">Want to Learn</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question4" id="inlineRadio2"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio2">Beginner</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question4" id="inlineRadio3"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio3">Intermediate</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question4" id="inlineRadio3"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio3">Advanced</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 5-->
+                <h3 class="quiz_question">5. What is you ideal workspace environment?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question6" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">Nintendo/SquareSpace</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question6" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">Apple/Google</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question6" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">FBI/NordVPN</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question6" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Bank of America</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question6" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">None of the above</label>
-        </div>
-</br>
-</br>
-        <!--Question 7-->
-        <h3 class="quiz_question">7. Which of these subjects did you find most interesting in school?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question5" id="inlineRadio1"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio1">Independent</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question5" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">Small Groups</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question5" id="inlineRadio2"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio2">Collaborative Teams</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question5" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Leading a Project</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question5" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">Any of the above</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 6-->
+                <h3 class="quiz_question">6. Which of these would you enjoy working for?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question7" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">Art</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question7" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">Math</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question7" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Economics</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question7" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">Robotics</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question7" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">Other</label>
-        </div>
-</br>
-</br>
-        <!--Question 8-->
-        <h3 class="quiz_question">8. Which of these topics do you find most interesting to study?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question6" id="inlineRadio1"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio1">Nintendo/SquareSpace</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question6" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">Apple/Google</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question6" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">FBI/NordVPN</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question6" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Bank of America</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question6" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">None of the above</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 7-->
+                <h3 class="quiz_question">7. Which of these subjects did you find most interesting in school?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question8" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">The use of technology create digital media and
-                design</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question8" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">The use of technology to understand data and
-                functions</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question8" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">The use of technology to create new technology</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question8" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">The use of technology to advance finance methods and
-                stock trends</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question8" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">None of the above</label>
-        </div>
-</br>
-</br>
-        <!--Question 9-->
-        <h3 class="quiz_question">9. If you had to choose any one topic to study for the rest of your life, which would
-            you choose?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question7" id="inlineRadio1"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio1">Art</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question7" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">Math</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question7" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Economics</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question7" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">Robotics</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question7" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">Other</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 8-->
+                <h3 class="quiz_question">8. Which of these topics do you find most interesting to study?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question9" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">Creative Development</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question9" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">Maths and Data</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question9" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Security</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question9" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">Artifical Intelligence</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question9" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">Other</label>
-        </div>
-</br>
-</br>
-        <!--Question 10-->
-        <h3 class="quiz_question">10. On a scale of 1-5 how organized are you?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question8" id="inlineRadio1"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio1">The use of technology create digital media and
+                        design</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question8" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">The use of technology to understand data and
+                        functions</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question8" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">The use of technology to create new
+                        technology</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question8" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">The use of technology to advance finance methods
+                        and
+                        stock trends</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question8" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">None of the above</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 9-->
+                <h3 class="quiz_question">9. If you had to choose any one topic to study for the rest of your life,
+                    which would
+                    you choose?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question10" id="inlineRadio1" value="tech_related">
-            <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question10" id="inlineRadio2" value="creative_design">
-            <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question10" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">3</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question10" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">4</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question10" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">5</label>
-        </div>
-</br>
-</br>
-        <!--Question 11-->
-        <h3 class="quiz_question">11. When it comes to your finished work product, what’s most important?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question9" id="inlineRadio1"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio1">Creative Development</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question9" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">Maths and Data</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question9" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Security</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question9" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">Artifical Intelligence</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question9" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">Other</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 10-->
+                <h3 class="quiz_question">10. On a scale of 1-5 how organized are you?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question11" id="inlineRadio1" value="tech_related">
-            <label class="form-check-label" for="inlineRadio1">No preference</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question11" id="inlineRadio2" value="creative_design">
-            <label class="form-check-label" for="inlineRadio2">Beauty: You want your work to look amazing</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question11" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">Functionality: You want your product to work
-                exceptionally well for users</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question11" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Solving a problem: You want people to benefit from your
-                work</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question11" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">Security: You want your product to be safe for
-                users</label>
-        </div>
-</br>
-</br>
-        <!--Question 12-->
-        <h3 class="quiz_question">12. Which of these scenarios are you most interested in?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question10" id="inlineRadio1"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question10" id="inlineRadio2"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question10" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question10" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question10" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 11-->
+                <h3 class="quiz_question">11. When it comes to your finished work product, what’s most important?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question12" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">Designing a website, magazine layout or video
-                game</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question12" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Ensure a businesses computer networks are working
-                effectively</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question12" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">Analyze data and information</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question12" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">Keep a business’ computer systems safe and secure</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question12" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">Planning a project for a company</label>
-        </div>
-    </br>
-</br>
-        <!--Question 13-->
-        <h3 class="quiz_question">13. Which job would you be MOST interested in?</h3>
-        <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question11" id="inlineRadio1"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio1">No preference</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question11" id="inlineRadio2"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio2">Beauty: You want your work to look
+                        amazing</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question11" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">Functionality: You want your product to work
+                        exceptionally well for users</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question11" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Solving a problem: You want people to benefit
+                        from your
+                        work</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question11" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">Security: You want your product to be safe for
+                        users</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 12-->
+                <h3 class="quiz_question">12. Which of these scenarios are you most interested in?</h3>
+                <div class="col-12">
 
-            <input class="form-check-input" type="radio" name="question13" id="inlineRadio1" value="creative_design">
-            <label class="form-check-label" for="inlineRadio1">App developer, I enjoy seeing my product visually come to
-                life</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question13" id="inlineRadio2" value="advanced_technology">
-            <label class="form-check-label" for="inlineRadio2">Computer Engineer, I like working with machinery and
-                hardware</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question13" id="inlineRadio2" value="fintech_business">
-            <label class="form-check-label" for="inlineRadio2">Digital Marketer, I enjoy working in the buisness related
-            </label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question13" id="inlineRadio2" value="cybersecurity_it">
-            <label class="form-check-label" for="inlineRadio2">Statistican, I'd prefer to work with stats and
-                numbers</label>
-        </div>
-        <div class="col-12">
-            <input class="form-check-input" type="radio" name="question13" id="inlineRadio2" value="tech_related">
-            <label class="form-check-label" for="inlineRadio2">Project Manager, I'd prefer to be the leader of a
-                project</label>
-        </div>
-    </br>
-</br>
+                    <input class="form-check-input" type="radio" name="question12" id="inlineRadio1"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio1">Designing a website, magazine layout or video
+                        game</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question12" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Ensure a businesses computer networks are working
+                        effectively</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question12" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">Analyze data and information</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question12" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">Keep a business’ computer systems safe and
+                        secure</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question12" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">Planning a project for a company</label>
+                </div>
+                </br>
+                </br>
+                <!--Question 13-->
+                <h3 class="quiz_question">13. Which job would you be MOST interested in?</h3>
+                <div class="col-12">
 
+                    <input class="form-check-input" type="radio" name="question13" id="inlineRadio1"
+                        value="creative_design">
+                    <label class="form-check-label" for="inlineRadio1">App developer, I enjoy seeing my product visually
+                        come to
+                        life</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question13" id="inlineRadio2"
+                        value="advanced_technology">
+                    <label class="form-check-label" for="inlineRadio2">Computer Engineer, I like working with machinery
+                        and
+                        hardware</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question13" id="inlineRadio2"
+                        value="fintech_business">
+                    <label class="form-check-label" for="inlineRadio2">Digital Marketer, I enjoy working in the buisness
+                        related
+                    </label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question13" id="inlineRadio2"
+                        value="cybersecurity_it">
+                    <label class="form-check-label" for="inlineRadio2">Statistican, I'd prefer to work with stats and
+                        numbers</label>
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input" type="radio" name="question13" id="inlineRadio2"
+                        value="tech_related">
+                    <label class="form-check-label" for="inlineRadio2">Project Manager, I'd prefer to be the leader of a
+                        project</label>
+                </div>
+                </br>
+                </br>
+
+
+            </div>
+
+
+            <input type='submit' id="submit" class="btn btn-outline-light">
+        </div>
 
     </div>
-
-    
-    <input type='submit' id="submit" class="btn btn-outline-light">
-</div>
-
-</div>
 </form>
 
 

@@ -1,11 +1,89 @@
 {% extends 'base.html'%}
 
 {% block title%}
-
+Contact Us
 {% endblock title%}
 
 
 
 {% block content%}
+
+<body id="contact_us">
+    <div class="container" id="contact_us-container">
+        <h1 id="contact_us_h1">CONNECT WITH US</h1>
+        <p id="contact_us_p">We would love to respond to your queries and help you succeed. 
+        </br> Feel free to get in touch with us.</p>
+
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3 id="left_contact">Send your request</h3>
+
+
+                <form>
+                    <div class="input-row">
+
+                        <div class="input-group">
+                            <label id="contact_label">Name</label>
+                            <input type="type" placeholder="Your Name" id="contact_us-input">
+                        </div>
+                        <div class="input-group">
+                            <label id="contact_label">Phone</label>
+                            <input type="type" placeholder="+1 000 000 0000" id="contact_us-input">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label id="contact_label">Email</label>
+                            <input type="type" placeholder="youremail@email.com" id="contact_us-input">
+                        </div>
+                        <div class="input-group">
+                            <label id="contact_label">Subject</label>
+                            <input type="type" placeholder="ex. Career Information" id="contact_us-input">
+                        </div>
+                    </div>
+
+
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Type Your Message"></textarea>
+
+                    <button type="submit" id="contact_us-btn">SEND</button>
+
+                </form>
+            </div>
+
+
+
+            <div class="contact-right">
+                <h3 id="right_contact">Reach Us</h3>
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contact_us@email.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone</td>
+                        <td>+1 888 888 8888</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>123 Main Street</br>
+                            City, ST 12345
+                            Country 123456
+                        </td>
+                    </tr>
+
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
 
 {% endblock content%}
