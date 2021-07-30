@@ -450,7 +450,6 @@ h1{
 }
 
 /*RESOURCES PAGE*/
-
 #resources{
     background: rgba(139, 198, 226, 0.726);
 }
@@ -459,6 +458,7 @@ h1{
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 #resources_p{
     color: #000;
     margin-bottom: 40px;
@@ -479,6 +479,14 @@ h1{
     flex-basis: 40%;
     padding: 40px 40px;
     color: rgba(139, 198, 226, 0.726);
+}
+#resources_img1{
+    height: 300px;
+}
+#resources_logo_descriptions{
+    margin-top:40px;
+    text-align: left;
+    font-size: 17px;
 }
 .input-row{
     display: flex;
