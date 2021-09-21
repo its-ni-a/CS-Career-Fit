@@ -8,12 +8,9 @@ Home
 {% block content%}
 <!--HEADER-->
 <div class="background_motion">
-
-    <div class="center">
-        <h1 class="centertext glitch" data-text="COMPUTER SCIENCE">COMPUTER SCIENCE
+        <h1 class="centertext glitch" data-text="COMPUTER SCIENCE">COMPUTER </br>SCIENCE
             </br>
         </h1>
-    </div>
 </div>
 
 <div class="blank_space"></div>
@@ -21,19 +18,19 @@ Home
 <div class="home_text">
     <section>
         <div class="homepage_pic1">
-            <div class="container">
+            
                 <div class="row">
                     <div class="col-md-6 col-sm-12"></div>
                     <h1 class="text1">What is </h1>
                     <h2 class="text2">Computer Science?</h2>
                 </div>
-            </div>
+            
     </section>
 
     <!--CS DESCRIPTION-->
     <section>
         <div class="homepage_pic2">
-            <div class="container">
+            <div class="container" id="home-container">
                 <div class="row">
                     <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
                         <div class="text3">WHAT IS IT?</div>
@@ -56,8 +53,8 @@ Home
 
 
     <!--CATEGORIES-->
-    <section>
-        <div class="container">
+    <section id="learn_programming_lang">
+        <div class="container" id="home-container">
 
             <h1 id="Text3_p">Learn Computer Programming Languages</h1>
 
@@ -66,86 +63,104 @@ Home
                 Explore common programming languages that can be used in various career paths.</p>
             </br>
             </br>
-        </div>
 
 
+            <div class="row">
+                <div class="cards_items row justify-center" id="programming_cards">
+                    <div class="col-lg-3 col-md-6 col-12" id="programming_languages">
 
+                        <div class="card-img-top">JavaScript</div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Used for front end website development and game development.
+                                    JavaScript is used to manipulate various page elements to make them more
+                                    dynamic and interactive for users. HTML and CSS are languages that give
+                                    structure and style to web pages where JavaScript gives web pages interactive
+                                    elements that engage a user and improve user experience.</p>
+                                <a href="https://www.javascript.com/" class="btn"
+                                    style="background-color: rgb(6, 62, 88); color: #fff; ">Learn more</a>
+                            </div>
+                        </div>
 
+                    </div>
 
-        <div class="cards_items row justify-center">
-            <div class="languages-col" id="java_margin">
-                <div class="card-img-top">JavaScript</div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Used for front end website development and game development.
-                            JavaScript is used to manipulate various page elements to make them more
-                            dynamic and interactive for users. HTML and CSS are languages that give
-                            structure and style to web pages where JavaScript gives web pages interactive
-                            elements that engage a user and improve user experience.</p>
-                        <a href="https://www.javascript.com/" class="btn" style="background-color: rgb(6, 62, 88); color: #fff; ">Learn more</a>>
+                    </br>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12" id="programming_languages">
+
+                        <div class="card-img-top">Python</div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Used by major organizations, such as Google, YouTube and NASA,
+                                    Python is object-oriented and used for web development. It is simple to learn and
+                                    its high-level
+                                    built in data structures combined with dynamic typing and dynamic binding makes
+                                    it suitable
+                                    for Rapid Application Development, and for use as a scripting or "glue
+                                    language" to connect existing
+                                    components together</p>
+                                <a href="https://www.python.org/" class="btn"
+                                    style="background-color: rgb(6, 62, 88); color: #fff;">Learn
+                                    more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </br>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12" id="programming_languages">
+
+                        <div class="card-img-top">Java</div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Ideal for web-based development, Java is an object-oriented,
+                                    high-level language used to develop applications for video games and mobile
+                                    apps. Java is used as the server-side language for most back-end development
+                                    projects, including those involving big data and Android development. It is
+                                    also commonly used for desktop, mobile, numerical computing and games.</p>
+                                <a href="https://www.java.com/en/" class="btn"
+                                    style="background-color: rgb(6, 62, 88); color: #fff;">Learn
+                                    more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </br>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12" id="programming_languages">
+
+                        <div class="card-img-top">PHP</div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Primarily used alongside dynamic data-heavy websites to collect
+                                    form data, PHP is easy to learn and can be used on all major operating systems.
+                                    It
+                                    is used to manage dynamic content, databases, session tracking, even build
+                                    entire
+                                    e-commerce sites. It is integrated with a number of popular databases, including
+                                    MySQL,
+                                    PostgreSQL, Oracle, Informix, and Microsoft SQL Server.
+                                </p>
+                                <a href="https://www.php.net/" class="btn"
+                                    style="background-color: rgb(6, 62, 88); color: #fff;">Learn
+                                    more</a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="languages-col">
-                <div class="card-img-top">Python</div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Used by major organizations, such as Google, YouTube and NASA,
-                            Python is object-oriented and used for web development. It is simple to learn and
-                            its high-level
-                            built in data structures combined with dynamic typing and dynamic binding makes
-                            it suitable
-                            for Rapid Application Development, and for use as a scripting or "glue
-                            language" to connect existing
-                            components together</p>
-                        <a href="https://www.python.org/" class="btn" style="background-color: rgb(6, 62, 88); color: #fff;">Learn
-                            more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="languages-col">
-                <div class="card-img-top">Java</div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Ideal for web-based development, Java is an object-oriented,
-                            high-level language used to develop applications for video games and mobile
-                            apps. Java is used as the server-side language for most back-end development
-                            projects, including those involving big data and Android development. It is
-                            also commonly used for desktop, mobile, numerical computing and games.</p>
-                        <a href="https://www.java.com/en/" class="btn" style="background-color: rgb(6, 62, 88); color: #fff;">Learn
-                            more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="languages-col">
-                <div class="card-img-top">PHP</div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Primarily used alongside dynamic data-heavy websites to collect
-                            form data, PHP is easy to learn and can be used on all major operating systems.
-                            It
-                            is used to manage dynamic content, databases, session tracking, even build
-                            entire
-                            e-commerce sites. It is integrated with a number of popular databases, including
-                            MySQL,
-                            PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.
-                        </p>
-                        <a href="https://www.php.net/" class="btn" style="background-color: rgb(6, 62, 88); color: #fff;">Learn
-                            more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </br>
+            </br>
     </section>
 
     </section>
     <div class="row">
         <div class="homepage_pic4">
             <div class="row">
-                <div class="container">
+                <div class="container" id="bottom-home-container">
                     <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
                         <h1 id="Text4_h1">What will you choose?</h1>
 
@@ -157,11 +172,12 @@ Home
                         </p>
 
                         <p id="Text4_p_quiz"> Take our quiz to see what career in Computer Science best suits you!
-                        </br>
-                    </br>
-                            <a href="/quiz" class="btn"  id="btn_quiz" style="background-color: #fff; color: rgb(6, 62, 88);">Take the quiz!</a>
+                            </br>
+                            </br>
+                            <a href="/quiz" class="btn" id="btn_quiz"
+                                style="background-color: #fff; color: rgb(6, 62, 88);">Take the quiz!</a>
                         </p>
-                        
+
                     </div>
                 </div>
             </div>

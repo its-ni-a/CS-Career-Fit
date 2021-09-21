@@ -15,8 +15,7 @@
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
-  direction: ltr;
-}
+  direction: ltr;}
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -32,7 +31,7 @@
 .centertext{
     font-size: 100px;
     font-weight: 700; 
-    transform: translate(0%, 200%);
+    transform: translate(0%, 10%);
     font-family: 'Nova Mono', monospace;
     text-align: center;
     padding-bottom: 10px;
@@ -41,6 +40,12 @@
     text-align: center;
     color: #fff;
     mix-blend-mode: lighten;
+    font-size: 100px;
+    transform: translate(0%, 10%);
+    font-weight: 700; 
+    font-family: 'Nova Mono', monospace;
+    text-align: center;
+    padding-bottom: 10px;
 }
 .glitch::before, .glitch::after{
     content: attr(data-text);
@@ -51,6 +56,7 @@
     left: 0;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
+   
 }
 .glitch::before{
     left: .5rem;
@@ -130,17 +136,16 @@
     background-position: center;
     height: 700px;
 }
-.background_motion:before{
-    content:'';
-    position: absolute;
+.background_motion{
     width: 100%;
     height: 700px;
     background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("https://images.alphacoders.com/104/thumb-1920-1046781.jpg") 0 0 no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.background_motion:hover:before{
-    animation: animate 3s infinite;
-}
+/*
 @keyframes animate{
     0%{
         background-position: 0 0;
@@ -180,35 +185,32 @@
         background-position: 0 0;
         filter: hue-rotate(360deg);
     }
-}
-
-.blank_space{
+}*/
+/*.blank_space{
     width:100%;
     height: 600px; 
     background-color: black;
-}
-
+}*/
 .home_text{
     font-family: 'Baloo 2', cursive;
     color: #fff;
 }
 .homepage_pic1{
     background: linear-gradient( rgba(0,0,0,0.4), rgba(0, 0, 0, 0.7)),url("https://ellisdownhome.com/wp-content/uploads/2019/01/Computers.jpg") 0 0 no-repeat;
-    height: 600px;
+    height: 400px;
     background-size: cover;
 }
 .text1{
     font-size: 50px;
     font-family: 'Encode Sans SC', sans-serif;
-    position: absolute;
-    padding-top: 220px;
-    
+    margin: 2rem;
+    padding-top: 10rem;
 }
 .text2{
     font-size: 70px;
     font-family: 'Encode Sans SC', sans-serif;
     color: rgb(16, 179, 255);
-    padding-top: 300px;
+    margin: 2rem;
 }
 .homepage_pic2{
     background: linear-gradient(45deg, rgba(13, 157, 224)70%, rgba(0, 0, 0, 0.5))30%,url("https://i.pinimg.com/originals/a0/73/2f/a0732f8b3693f76363d6e5307ec43996.jpg") 0 0 no-repeat;
@@ -223,31 +225,24 @@ p{
     font-family: 'Baloo 2', cursive;
     color: #fff;
 }
-section{
-    background: rgb(6, 62, 88);
+.homepage_pic1 h1{
+    position: static;
 }
-.container{
+#learn_programming_lang{
+    background: rgb(1, 97, 134)
+}
+#home-container{
     padding-top: 100px;
 }
 .col-md-10{
     text-align: center;
     background: rgb(6, 62, 88);
 }
-
 h1{
     font-weight: 600;    
 }
 #Text3_p{
     text-align: center;
-}
-.languages-col{
-    flex-basis: 23.5%;
-    border-radius: 10px;
-    justify-content: space-between;
-    margin-bottom: 8%;
-}
-#java_margin{
-    margin-left: 40px;
 }
 .card-text{
     color: black;
@@ -266,10 +261,15 @@ h1{
     font-size: 30px;
     background-image: linear-gradient( rgba(13, 157, 224,0.4), rgba(0, 0, 0, 0.2)),url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v627-aew-11-technologybackground_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1d2c8b7a4644da738e63e866b7210855");
  }
-.btn{
+.card-body > .btn{
     background-color: rgb(6, 62, 88);
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
  }
+#bottom-home-container{
+    margin: 50px;
+    width: 70%;
+}
 .homepage_pic4{
     background: linear-gradient(45deg, rgba(13, 157, 224)70%, rgba(0, 0, 0, 0.5))30%,url("https://i.pinimg.com/originals/a0/73/2f/a0732f8b3693f76363d6e5307ec43996.jpg") 0 0 no-repeat;
     height: 600px;
@@ -278,15 +278,12 @@ h1{
 }
 #Text4_h1{
     margin-top: 50px;
-    margin-left: 100px;
 }
 #Text4_p{
-    margin-left: 100px;
     margin-bottom: 100px;
 }
 #Text4_p_quiz{
     font-weight: bold;
-    margin-left: 100px;
 }
 #btn_quiz{
     background:rgb(6, 62, 88);
@@ -301,13 +298,76 @@ h1{
     margin-left: 0%;
     
 }
+@media (max-width: 800px){
+    .background_motion{
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .centertext.glitch{
+        font-size: 60px;
+    }
+    .homepage_pic1{
+        height: 250px;
+        display: flex;
+        align-items: center;
+    }
+    .text1{
+        margin: 1.5rem;
+        font-size: 35;
+    }
+    .text2{
+        margin: 1.5rem;
+        font-size: 45;
+    }
+    .homepage_pic2{
+        height: 500px;
+    }
+    .text3{
+        font-size: 30;
+    }
+    p{
+        font-size: 15;
+    }
+    .row>.homepage_pic4{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .row > *, .row {
+        padding: 0 !important;
+        margin:0 !important;
+    }
+    .row .container {
+        margin: 0 auto;
+    }
+    #programming_cards{
+        display: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    #programming_languages{
+        width: 400px;
+        margin-bottom: 2rem !important;
+    }
+    .card-text{
+        font-size: 12;
+    }
+   .card-img-top{
+       font-size: 20;
+   }
+}
+
+
 /*QUIZ_PAGE*/
 .quiz_header{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url("https://media.istockphoto.com/photos/futuristic-circuit-board-blue-with-electrons-picture-id483147081?k=6&m=483147081&s=612x612&w=0&h=qUkUJKX1QvMbWv1Y2xQzgC6we1YiSLomxR1_h-25Fdk=") 0 0 no-repeat;   
     background-size: cover;
     height: 400px;
     text-align: center;
-    padding: 200px;
+}
+#empty_space{
+    height: 150px;
 }
 .quiz_question{
     font-size: 25px;
@@ -319,12 +379,11 @@ h1{
 
 }
 .quiz_title{
-    
     font-family: 'Nova Mono', monospace;
     font-weight: bold;
 }
 .quiz_description{
-    font-size: 20px;
+    font-size: 20px;   
 }
 #submit{
     color: fff;
@@ -337,46 +396,66 @@ h1{
 #submit:hover{
    color: rgb(6, 62, 88);
 }
-
-/*CREATIVE DESIGN PAGE*/
-.creative_careers{
-    background:  url("https://i.pinimg.com/474x/33/19/14/3319145eb4b1cbd9e5603cb5d5539ff1.jpg") 0 0 no-repeat;
-    height: 400px;
-    width: 850px;
+@media (max-width: 800px){
+    .quiz_body{
+        margin: 100px;
+    }
+   .quiz_question{
+       font-size: 17px;
+   } 
+   .form-check-label{
+       font-size: 13.5px;
+   }
 }
-.col-md-8{
-    background: rgb(145, 200, 221);   
+
+/*BASE CAREER PAGE LAYOUT*/
+#career_text1_header{
+    background: rgb(145, 200, 221); 
+}
+#career_header_img{
+    padding: 0;
+    height: 100%;
+    width: 450px;
 }
 .text1_careers{
     font-size: 50px;
     font-family: 'Encode Sans SC', sans-serif;
 }
 .text2_careers{
-     font-size: 20px;
+    font-size: 20px;
     font-family: 'Baloo 2', cursive;
 }
-
-.text3_careers{
-    background: rgb(1, 97, 134); 
+#text3_and_icon{
     height: 300px;
-    padding: 100px;
-    font-size: 20px;
+}
+.text3_careers{
     font-family: 'Baloo 2', cursive;
     color: #fff;
     text-align: right;
+    height: 300px;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
-.material-icons.md-48 { 
-    font-size: 48px; 
+#text3_container{
+    padding: 0;
+    margin: 0;
+    background: rgb(1, 97, 134); 
+}
+#icon_area{
+    background: rgb(6, 62, 88);
     color: white;
+}
+.material-icons.md-48 {
     margin: 125px;
+    font-size: 48px; 
 }
 .sec{
     background: #fff;
     text-align: center;
     font-family: 'Baloo 2', cursive;
-}
-.sec_icon{
-    background: rgb(0, 61, 85);
 }
 .career_options{
     padding-top: 5%;
@@ -407,14 +486,109 @@ h1{
 .career_col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0, 0.2);
 }
+.career-icons img{
+    max-width: 100%;
+}
+@media (max-width: 800px){
+    .text1_careers{
+        font-size: 30;
+        margin: 15px;
+    }
+    .text2_careers{
+        font-size: 15;
+        margin: 15px;
+    }
+    #text3_container{
+    background: rgb(1, 97, 134); 
+    height: 300px;
+    font-size: 20px;
+    }
+    .material-icons.md-48 {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .root {
+        margin: 0;
+    }
+    #text3_container{
+        padding: 0;
+        font-size: 15;
+        padding: 0;
+        display: flex;
+        height: 150px;
+    }
+    #career_header{
+        margin: 0;
+        padding: 0;
+    }
+    .text3_careers{
+        text-align: center;
+        height: 150px;
+        font-size: 15px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .career_options{
+        padding: 0;
+        margin: 20px;
+        padding-top: 20px;
+        text-align: left;
+    }
+    .career_cards{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .career_col{
+        flex-basis: 100%;
+        width: 300px;
+    }
+    .text4_careers{
+        text-align: center;
+        margin: 20px;
+    }
+    .career_descriptions_p{
+        margin: 20px;
+        text-align: center;
+    }
+    .sec{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+   #career_header_img{
+        display: flex;
+        width: 100%;
+        height: 200px;
+    }
+    .career-icons{
+        flex-direction: column;
+    }
+    
+}
+/*CREATIVE DESIGN PAGE*/
+#creative_careers{
+    height: 400px;
+    width: 850px;
+}
 #playstation{
     width: 200px;
-    height: 200px;
+    height: 150px;
+    margin-right: -10%;
+}
+#disney{
+    margin-left:-10%;
 }
 
 /*ADVANCED TECHNOLOGY PAGE*/
-.advanced_tech_careers{
-    background:  url("https://i.pinimg.com/474x/6c/33/e4/6c33e4958b81624198a12348b5172982.jpg") 0 0 no-repeat;
+#career-container{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+#advanced_tech_careers{
     height: 400px;
     width: 850px;
 }
@@ -425,7 +599,6 @@ h1{
 
 /*FINTECH/BUSINESS PAGE*/
 #business_fin_careers{
-    
     height: 400px;
     width: 850px;
 }
@@ -443,7 +616,6 @@ h1{
     margin: 100px;
 }
 
-/*TECH-RELATED PAGE*/
 #tech_related_careers{
     height: 400px;
     width: 850px;
@@ -457,13 +629,13 @@ h1{
     color: #000;
     margin-bottom: 10px;
     font-weight: bold;
+    margin: 20px;
 }
-
 #resources_p{
     color: #000;
     margin-bottom: 40px;
+    margin: 20px;
 }
-
 #resources-container{
     width: 80%;
     margin-bottom: 100px;
@@ -471,13 +643,11 @@ h1{
 .resources-box{
     display: flex;
 }
-.resources-left{
+#resources-left{
     flex-basis: 60%;
-    padding: 40px 40px;
 }
-.resources-right{
+#resources-right{
     flex-basis: 40%;
-    padding: 40px 40px;
     color: rgba(139, 198, 226, 0.726);
 }
 #resources_img1{
@@ -509,10 +679,45 @@ textarea{
     outline: none;
     padding: 10px;
 }
-
-
+@media (max-width: 800px){
+    #resources_img1{
+        height: 150px;
+        padding: 0;
+        margin-top: 10px;
+    }
+    #resources_h1{
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    #resources_p{
+        font-size: 15px;
+        margin: 20px;
+    }
+    #resources_logo_descriptions{
+        margin: 20px;
+        font-size: 11px;
+    }
+    #bootstrap{
+        height: 100px;
+        width: 150px;
+    }
+    #w3schools{
+        height: 100px;
+        width: 150px;
+    }
+    #cloudshell{
+        height: 100px;
+        width: 200px;
+    }
+    
+}
 /*CONTACT_US PAGE*/
-
+#empty_space2{
+    height: 50px;
+}
 #contact_us{
     background: rgba(65, 165, 211, 0.726);
 }
@@ -596,4 +801,17 @@ tr td:first-child{
 tr td{
     padding-top: 20px;
     color: #fff;
+}
+@media (max-width: 800px){
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        flex-basis: 50%;        
+    }
+    #contact_us_container{
+        margin: 0;
+        padding: 0;
+    }
+    
 }
